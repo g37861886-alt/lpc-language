@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Download, Zap, BookOpen, Github, ExternalLink } from "lucide-react";
+import { Code, Download, Zap, BookOpen, Github, ExternalLink, Gamepad2, Sparkles } from "lucide-react";
 
 /**
  * Design System: Modern Documentation-First
@@ -33,6 +33,12 @@ export default function Home() {
             </a>
             <a href="#docs" className="text-sm font-medium text-gray-700 hover:text-blue-700 transition">
               Documentação
+            </a>
+            <a href="/pack-game-engine" className="text-sm font-medium text-gray-700 hover:text-blue-700 transition">
+              Pack Engine
+            </a>
+            <a href="/sol-language" className="text-sm font-medium text-gray-700 hover:text-blue-700 transition">
+              Sol
             </a>
             <Button variant="outline" size="sm" asChild>
               <a href="https://github.com/gabriel/lpc-vscode" target="_blank" rel="noopener noreferrer">
@@ -472,6 +478,58 @@ main:
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Resources Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Recursos Adicionais
+            </h2>
+            <p className="text-lg text-gray-600">
+              Explore o Pack Game Engine e a linguagem experimental Sol
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Gamepad2 className="w-6 h-6 text-blue-700" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-gray-900">Pack Game Engine</h3>
+                  <p className="text-sm text-gray-600">Biblioteca completa de motor de jogo</p>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-6">
+                Uma biblioteca profissional em LPC com sistema de entidades, componentes, física, renderização e animação. Perfeita para desenvolver jogos 2D.
+              </p>
+              <Button variant="outline" asChild className="w-full">
+                <a href="/pack-game-engine">Ver Documentação</a>
+              </Button>
+            </Card>
+
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-6 h-6 text-blue-700" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-gray-900">Sol Language</h3>
+                  <p className="text-sm text-gray-600">Linguagem experimental e inovadora</p>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-6">
+                Uma linguagem experimental que mescla Python, Lua e LPC para máxima flexibilidade. Transpila para Python e oferece metaprogramação poderosa.
+              </p>
+              <Button variant="outline" asChild className="w-full">
+                <a href="/sol-language">Explorar Sol</a>
+              </Button>
+            </Card>
           </div>
         </div>
       </section>
