@@ -40,6 +40,9 @@ export default function Home() {
             <a href="/sol-language" className="text-sm font-medium text-gray-700 hover:text-blue-700 transition">
               Sol
             </a>
+            <a href="/penalty-game" className="text-sm font-medium text-gray-700 hover:text-blue-700 transition">
+              Jogo
+            </a>
             <Button variant="outline" size="sm" asChild>
               <a href="https://github.com/gabriel/lpc-vscode" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
@@ -478,6 +481,40 @@ main:
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Game Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-blue-50 to-emerald-50">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Jogue Agora
+            </h2>
+            <p className="text-lg text-gray-600">
+              Teste um jogo de Pênalti completo desenvolvido em LPC
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <Card className="p-8 border-l-4 border-emerald-500 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Gamepad2 className="w-6 h-6 text-emerald-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-gray-900">Penalty Kick Game</h3>
+                  <p className="text-sm text-gray-600">Jogo interativo com física e IA</p>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-6">
+                Um jogo de pênalti completo com física realista, IA do goleiro, controles intuitivos e sistema de pontuação. Desenvolvido em LPC usando o Pack Game Engine.
+              </p>
+              <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white" asChild>
+                <a href="/penalty-game">Jogar Agora</a>
+              </Button>
+            </Card>
           </div>
         </div>
       </section>

@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import PackGameEngine from "./pages/PackGameEngine";
 import SolLanguage from "./pages/SolLanguage";
+import PenaltyGame from "./pages/PenaltyGame";
 
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/pack-game-engine"} component={PackGameEngine} />
       <Route path={"/sol-language"} component={SolLanguage} />
+      <Route path={"/penalty-game"} component={PenaltyGame} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
