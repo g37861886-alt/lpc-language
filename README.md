@@ -209,5 +209,6 @@ Para suporte, abra uma issue no [GitHub Issues](https://github.com/g37861886-alt
 ---
 
 **Versão:** 1.0.0  
-**Última atualização:** 1º de Março de 2026  
+**Última atualização:** 1º de Março de 2026
+**próxima atualização:** 9º de Março de 2026  
 **Status:** ✅ Ativo e em desenvolvimento
